@@ -18,7 +18,7 @@
 
 
 
-
+var person : (name: String, age: Int) = ("Mindaugas", 23)
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-
+print("\(person.name) is \(person.age) years old")
 
 
 
@@ -40,7 +40,7 @@
  */
 // write your code here
 
-
+person.age += 1
 
 
 
@@ -53,7 +53,7 @@
 // write your code here
 
 
-
+print("Happy \(person.age) birthday, \(person.name)!")
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-
+var anotherPerson: (name: String, age: Int) = ("Inga", 18)
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-
+print("\(anotherPerson.name) is \(anotherPerson.age) years old")
 
 
 
@@ -88,7 +88,7 @@
 // write your code here
 
 
-
+anotherPerson.age += 1
 
 
 
@@ -100,7 +100,7 @@
 
 
 
-
+print("Happy \(anotherPerson.age) birthday, \(anotherPerson.name)!")
 
 
 
@@ -111,7 +111,7 @@
 // write your code here
 
 
-
+let human: (name: String, age: Int) = ("Nobody", 0)
 
 
 
@@ -120,9 +120,9 @@
 /*:
  ### 10. Can you change `human`'s age? Why or why not?
  */
+human.age = 1
 
-
-
+// error: cannot assign to property: 'human' is a 'let' constant
 
 
 
